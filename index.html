@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type = "module" src = "index.js"></script>
+    <style>
+        h1 {
+            margin-left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bookmark Website</h1>
+<form style="line-height: 1.5;">
+        <label for = "webtitle">Website Title: </label>
+        <input type ="text" name ="webtitle" id = "webtitle" required><br/>
+        <label for = "weburl">Website URL: </label>
+        <input type ="url" name ="weburl" id = "weburl" required><br/>
+        <label>
+            <button type ="submit">Add</button>
+        </label>
+</form>
+<h4>All Bookmarks</h1>
+<ul id="savedBookmarks" style="line-height: 1.5;"></ul>
+</body>
+</html>
